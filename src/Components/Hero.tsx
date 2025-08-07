@@ -30,7 +30,7 @@ const Hero = () => {
         </h1>
         
         <TypeAnimation 
-          sequence={['Full-Stack Developer', 2000, 'UI/UX Specialist', 2000]}
+          sequence={['Full-Stack Developer', 2000, 'UI/UX Specialist', 2000,'Software Developer', 2000]}
           wrapper="span"
           className="text-lg md:text-xl text-gray-600 dark:text-gray-300 block min-h-[1.75rem] mb-8"
           repeat={Infinity}
