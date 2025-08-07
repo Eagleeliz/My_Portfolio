@@ -40,6 +40,9 @@ const Hero = () => {
           href="/resume.pdf" 
           download
           className="inline-flex items-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-md transition-colors"
+           onClick={(e) => {
+    e.preventDefault(); 
+  }}
         >
           Download Resume
         </a>

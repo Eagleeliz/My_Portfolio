@@ -1,15 +1,18 @@
 // src/components/Contact.tsx
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser"; // ✅ Updated package
-import Swal from "sweetalert2";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser"; 
+import Swal from "sweetalert2"; // 
 
 const Contact: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
+  const [isLoading, setIsLoading] = useState(false); //  Added loading state
 
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // ✅ prevent form reload
+    e.preventDefault();
 
     if (!form.current) return;
+
+    setIsLoading(true); // Disable the button and show "Sending..."
 
     try {
       await emailjs.sendForm(
@@ -34,6 +37,8 @@ const Contact: React.FC = () => {
         title: "Oops...",
         text: "Something went wrong. Please try again later.",
       });
+    } finally {
+      setIsLoading(false); // ✅ Re-enable the button
     }
   };
 
@@ -89,9 +94,14 @@ const Contact: React.FC = () => {
 
           <button
             type="submit"
-            className="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition"
+            disabled={isLoading} //  Button disabled when sending
+            className={`px-6 py-3 rounded-md transition text-white ${
+              isLoading
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-indigo-600 hover:bg-indigo-700"
+            }`}
           >
-            Send Message
+            {isLoading ? "Sending..." : "Send Message"} {/*  Text changes */}
           </button>
         </form>
       </div>

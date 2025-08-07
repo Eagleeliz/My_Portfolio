@@ -18,7 +18,7 @@ const projects: Project[] = [
     title: "Hotel Room Booking System",
     imageUrl:hotelImg,
     description: "Built to automate and simplify hotel reservations by enabling users to check room availability, book online, and make secure payments, while providing hotel admins with tools to manage rooms, bookings, and payments—all in one platform.",
-    tech: ["React", "TypeScript", "Tailwind", "Node.js"],
+    tech: ["React", "TypeScript", "Express", "Node.js"],
     liveUrl: "https://wonderful-field-0a401fd03.2.azurestaticapps.net/",
     githubUrl: "https://github.com/Eagleeliz/Hotel_Room_Booking-Backend",
   },
@@ -26,9 +26,9 @@ const projects: Project[] = [
     title: "Portfolio Website",
     imageUrl:portfolioImg,
     description: "My personal portfolio showcasing my skills and projects. Features responsive design with dark mode toggle.",
-    tech: ["React", "Tailwind", "Framer Motion"],
-    liveUrl: "https://elizabeth-portfolio.example.com",
-    githubUrl: "https://github.com/yourusername/portfolio",
+    tech: ["React", "Tailwind", "TypeScript"],
+    liveUrl: "https://salmon-glacier-04695f510.1.azurestaticapps.net/#projects",
+    githubUrl: "https://github.com/Eagleeliz/My_Portfolio",
   },
 ];
 
