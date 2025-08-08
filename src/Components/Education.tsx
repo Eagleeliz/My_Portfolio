@@ -39,11 +39,13 @@ const Education: React.FC = () => {
         className="bg-indigo-50 dark:bg-gray-800 p-6 rounded-xl shadow-md"
       >
          {/*IMAGE PROJECT */}
-                 <img
-      src={laikipiaImg}
-      alt='Laikipia Univ logo'
-      className="w-full h-25 object-cover rounded-lg mb-6"
-    />
+      <img
+  src={laikipiaImg}
+  alt="Laikipia Univ logo"
+  className="w-full max-h-[200px] object-cover rounded-lg mb-6"
+/>
+
+
         <h3 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4">LAIKIPIA UNIVERSITY</h3>
         <div className="flex flex-wrap gap-3">
            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-4">
@@ -62,11 +64,12 @@ const Education: React.FC = () => {
         className="bg-indigo-50 dark:bg-gray-800 p-6 rounded-xl shadow-md"
       >
           {/*IMAGE PROJECT */}
-                 <img
-      src={teach2giveImg}
-      alt='TEACH2GIVE logo'
-      className="w-full h-24 object-cover rounded-lg mb-6"
-    />
+       <img
+  src={teach2giveImg}
+  alt="TEACH2GIVE logo"
+  className="w-full max-h-[200px] object-cover rounded-lg mb-6"
+/>
+
         <h3 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4">TEACH2GIVE</h3>
         <div className="flex flex-wrap gap-3">
            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-4">

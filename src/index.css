@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @tailwind utilities;
-  /* Optional: Customize typing cursor */
+
+/* Enable smooth scrolling across the site */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Prevent content from hiding behind fixed navbar */
+}
+
+/*  Customize typing cursor */
 .react-type-animation::after {
   content: '|';
   animation: blink 1s step-end infinite;

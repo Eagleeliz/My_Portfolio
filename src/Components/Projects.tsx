@@ -3,7 +3,7 @@ import React from "react";
 import { Github, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import hotelImg from "../assets/hotel.jpg"
-import portfolioImg from "../assets/POERTFOLIO.jpg"
+import portfolioImg from "../assets/portfolio2.jpg"
 interface Project {
   title: string;
   description: string;
@@ -25,10 +25,10 @@ const projects: Project[] = [
   {
     title: "Portfolio Website",
     imageUrl:portfolioImg,
-    description: "My personal portfolio showcasing my skills and projects. Features responsive design with dark mode toggle.",
+    description: "A personal portfolio showcasing selected projects, technical skills,experiences,and design sensibility all presented in a clean dark mode layout.",
     tech: ["React", "Tailwind", "TypeScript"],
     liveUrl: "https://salmon-glacier-04695f510.1.azurestaticapps.net/#projects",
-    githubUrl: "https://github.com/Eagleeliz/My_Portfolio",
+    githubUrl: "https://github.com/Eagleeliz",
   },
 ];
 
@@ -68,11 +68,12 @@ const Projects: React.FC = () => {
               className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow hover:shadow-lg transition-all hover:-translate-y-1"
             >
               {/*IMAGE PROJECT */}
-                 <img
-      src={project.imageUrl}
-      alt={project.title}
-      className="w-full h-48 object-cover rounded-lg mb-4"
-    />
+            <img
+  src={project.imageUrl}
+  alt={project.title}
+  className="w-full max-h-[250px] object-contain rounded-lg mb-4"
+/>
+
               <h3 className="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">
                 {project.title}
               </h3>
@@ -94,28 +95,29 @@ const Projects: React.FC = () => {
               </div>
 
               {/* Links */}
-              <div className="flex gap-4 border-t border-gray-100 dark:border-gray-700 pt-4">
-                {project.liveUrl && (
-                  <motion.a
-                    whileHover={{ scale: 1.03 }}
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:underline text-sm font-medium"
-                  >
-                    <ExternalLink size={16} /> Live Demo
-                  </motion.a>
-                )}
-                <motion.a
-                  whileHover={{ scale: 1.03 }}
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 text-sm font-medium"
-                >
-                  <Github size={16} /> Source Code
-                </motion.a>
-              </div>
+            <div className="flex flex-wrap gap-4 border-t border-gray-100 dark:border-gray-700 pt-4">
+  {project.liveUrl && (
+    <motion.a
+      whileHover={{ scale: 1.05 }}
+      href={project.liveUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white dark:bg-indigo-500 dark:text-white rounded-md shadow hover:bg-indigo-700 dark:hover:bg-indigo-600 transition text-sm font-medium"
+    >
+      <ExternalLink size={16} /> Live Demo
+    </motion.a>
+  )}
+  <motion.a
+    whileHover={{ scale: 1.05 }}
+    href={project.githubUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-700 text-white dark:bg-gray-600 dark:text-white rounded-md shadow hover:bg-gray-800 dark:hover:bg-gray-700 transition text-sm font-medium"
+  >
+    <Github size={16} /> Source Code
+  </motion.a>
+</div>
+
             </motion.div>
           ))}
         </div>
