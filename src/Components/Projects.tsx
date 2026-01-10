@@ -27,7 +27,7 @@ const projects: Project[] = [
     imageUrl:portfolioImg,
     description: "A personal portfolio showcasing selected projects, technical skills,experiences,and design sensibility all presented in a clean dark mode layout.",
     tech: ["React", "Tailwind", "TypeScript"],
-    liveUrl: "https://salmon-glacier-04695f510.1.azurestaticapps.net/#projects",
+    liveUrl: "https://elizabethwanjiku.netlify.app/",
     githubUrl: "https://github.com/Eagleeliz",
   },
 ];
