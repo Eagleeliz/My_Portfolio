@@ -10,6 +10,7 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import './index.css'
 import Education from "./Components/Education";
+import Certification from "./Components/Certification";
 
 const App: React.FC = () => {
   return (
@@ -35,6 +36,9 @@ const App: React.FC = () => {
       </section>
       <section id="projects">
         <Projects />
+      </section>
+      <section id="certification">
+        <Certification />
       </section>
       <section id="community">
         <Community />

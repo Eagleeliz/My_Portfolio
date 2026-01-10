@@ -2,6 +2,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser"; 
 import Swal from "sweetalert2"; // 
+import { motion } from "framer-motion";
 
 const Contact: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -48,7 +49,16 @@ const Contact: React.FC = () => {
         <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
           Contact Me
         </h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-8">
+        
+        <motion.div 
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-teal-400 mx-auto rounded-full origin-left"
+          />
+          <br></br>
+          <p className="text-gray-600 dark:text-gray-300 mb-8">
           Got a question, idea, or just want to say hi? I'd love to hear from you!
         </p>
 
