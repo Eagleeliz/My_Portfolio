@@ -19,7 +19,7 @@ const projects: Project[] = [
     imageUrl:hotelImg,
     description: "Built to automate and simplify hotel reservations by enabling users to check room availability, book online, and make secure payments, while providing hotel admins with tools to manage rooms, bookings, and payments—all in one platform.",
     tech: ["React", "TypeScript", "Express", "Node.js"],
-    liveUrl: "https://wonderful-field-0a401fd03.2.azurestaticapps.net/",
+    liveUrl: "https://hotel-room-booking-frontend.vercel.app/",
     githubUrl: "https://github.com/Eagleeliz/Hotel_Room_Booking-Backend",
   },
   {
