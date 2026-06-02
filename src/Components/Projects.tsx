@@ -4,6 +4,7 @@ import { Github, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import hotelImg from "../assets/hotel.jpg"
 import portfolioImg from "../assets/portfolio2.jpg"
+import image from "../assets/image.png"
 interface Project {
   title: string;
   description: string;
@@ -30,6 +31,15 @@ const projects: Project[] = [
     liveUrl: "https://elizabethwanjiku.netlify.app/",
     githubUrl: "https://github.com/Eagleeliz",
   },
+  {
+   title: "Maternal Care System",
+    imageUrl:image,
+    description: " A web-based Maternal Care System that supports mothers and caregivers throughout pregnancy and early childhood. The system provides symptom tracking, trimester-specific guidance, AI-assisted support, emergency alerts, and child development monitoring. It also offers dashboards and predictive analytics to help healthcare providers and policymakers improve maternal and child health outcomes.",
+    tech: ["React", "TypeScript", "Express", "Node.js"],
+    liveUrl: "https://final-year-project-three-opal.vercel.app/",
+    githubUrl: "https://github.com/Eagleeliz/Final-Year-Project",
+  }
+
 ];
 
 const Projects: React.FC = () => {
