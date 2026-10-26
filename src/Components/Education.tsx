@@ -49,7 +49,7 @@ const Education: React.FC = () => {
         <h3 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4">LAIKIPIA UNIVERSITY</h3>
         <div className="flex flex-wrap gap-3">
            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-4">
-        Currently a fourth year student at Laikipia University, pursuing a Bachelors of Science in Computer Science
+        Currently done with my course work and awaiting graduation at Laikipia University, having pursued a Bachelors of Science in Computer Science
         </p>
         
         </div>

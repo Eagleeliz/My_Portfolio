@@ -65,7 +65,7 @@ const About: React.FC = () => {
           I'm proficient in languages and tools such as:<br/>
         </p>
         <div className="flex flex-wrap gap-3">
-          {['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'PostgreSQL', 'MySql','Express'].map((skill) => (
+          {['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'PostgreSQL', 'MySql','Express','NextJs','Docker','DrizzleORM','Redux','Git','Github','CI/CD','AWS'].map((skill) => (
             <span
               key={skill}
               className="px-4 py-1.5 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 rounded-full text-sm font-medium"
